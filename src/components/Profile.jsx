@@ -59,7 +59,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-            <img src={temp_headshot} alt="temp" />
+            <img className="headshot" src={temp_headshot} alt="temp" />
         </div>
 
     </div>
