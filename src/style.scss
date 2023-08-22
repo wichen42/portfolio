@@ -139,7 +139,7 @@ $light_gray: #F9F9F9;
                         margin-top: 25px;
                         
                         span {
-                            font-size: 20px;
+                            font-size: 18px;
                             font-weight: 500;
                             margin-right: 20px;
                         }
@@ -153,10 +153,16 @@ $light_gray: #F9F9F9;
                             border-radius: 50%;
                             box-shadow: 0 0 10px rgba(0,0,0,.09);
                             margin-right: 10px;
-            
+                            position: relative;
+                            
+                            
                             img {
                                 width: 60%;
                             }
+                        }
+
+                        &:hover {
+                            cursor: pointer;
                         }
                     }
                 }

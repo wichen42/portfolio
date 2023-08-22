@@ -10,6 +10,7 @@ import sass_icon from "../assets/sass-icon.svg";
 import tailwind_icon from "../assets/tailwind-css-icon.svg";
 
 const Profile = () => {
+
   return (
     <div className="splash">
         <div className="profile">
