@@ -52,6 +52,8 @@ input{
 // Color Presets
 $light_gray: #F9F9F9;
 
+// Screen Sizes
+$mobile: 975px;
 
 .App {
     display: flex;
@@ -63,6 +65,10 @@ $light_gray: #F9F9F9;
 
     // HEADER
     .header {
+        @media (max-width: $mobile) {
+            
+        }
+
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -89,7 +95,14 @@ $light_gray: #F9F9F9;
                     cursor: pointer;
                 }
             }
+
+            #header-menu {
+                max-width: 2rem;
+                width: 100%;
+            }
         }
+
+ 
     }
 
     // PROFILE
@@ -103,6 +116,11 @@ $light_gray: #F9F9F9;
         justify-content: center;
 
         .profile {
+            @media (max-width: $mobile) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
             display: flex;
             align-items: center;
             gap: 2.5rem;
