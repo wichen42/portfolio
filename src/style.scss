@@ -9,7 +9,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 16px;
     font: inherit;
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
@@ -112,13 +112,13 @@ $light_gray: #F9F9F9;
 
                 #profile-title {
                     font-weight: 900;
-                    font-size: 62px;
+                    font-size: 4rem;
                     max-width: 500px;
                     margin-bottom: 25px;
                 }
 
                 #profile-blurb {
-                    font-size: 18px;
+                    font-size: 1.25rem;
                     max-width: 500px;
                     letter-spacing: .075rem;
                     margin-bottom: 25px;
@@ -139,7 +139,7 @@ $light_gray: #F9F9F9;
                         margin-top: 25px;
                         
                         span {
-                            font-size: 18px;
+                            font-size: 1.25rem;
                             font-weight: 500;
                             margin-right: 20px;
                         }
