@@ -51,6 +51,8 @@ input{
 
 // Color Presets
 $light_gray: #F9F9F9;
+$dark_gray: rgb(83, 83, 83);
+$blue: #147EFB;
 
 // Screen Sizes
 $mobile: 975px;
@@ -65,9 +67,6 @@ $mobile: 975px;
 
     // HEADER
     .header {
-        @media (max-width: $mobile) {
-            
-        }
 
         display: flex;
         justify-content: space-between;
@@ -99,10 +98,9 @@ $mobile: 975px;
             #header-menu {
                 max-width: 2rem;
                 width: 100%;
+                cursor: pointer;
             }
         }
-
- 
     }
 
     // PROFILE
@@ -141,7 +139,7 @@ $mobile: 975px;
                     max-width: 500px;
                     letter-spacing: .075rem;
                     margin-bottom: 25px;
-                    color: rgb(83, 83, 83);
+                    color: $dark_gray;
                 }
 
                 .links {
@@ -202,8 +200,48 @@ $mobile: 975px;
 
     // ABOUT
     .about {
-        background-color: $light_gray;
+        display: flex;
         width: 100%;
-        height: 100%;
+        justify-content: center;
+        gap: 2.5rem;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        background-color: white;
+
+        .about-image {
+            max-width: 100%;
+            max-height: 100%;
+            img {
+                width: 35rem;
+                border-radius: 2rem;
+            }
+        }
+
+        .about-text-container {
+            display: flex;
+            flex-direction: column;
+            
+            h2 {
+                font-weight: 700;
+                font-size: 1.25rem;
+                color: $blue;
+                margin-bottom: 25px;
+            }
+
+            #about-tagline {
+                font-size: 1.3rem;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+
+            #about-text {
+                max-width: 28rem;
+                font-weight: 400;
+                font-size: 1.15rem;
+                color: rgb(83, 83, 83);
+                line-height: 1.3rem;
+            }
+
+        }
     }
 }
