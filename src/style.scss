@@ -200,6 +200,11 @@ $mobile: 975px;
 
     // ABOUT
     .about {
+        @media (max-width: $mobile) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         display: flex;
         width: 100%;
         justify-content: center;
@@ -229,7 +234,7 @@ $mobile: 975px;
             }
 
             #about-tagline {
-                font-size: 1.3rem;
+                font-size: 1.35rem;
                 font-weight: 700;
                 margin-bottom: 25px;
             }
@@ -241,7 +246,137 @@ $mobile: 975px;
                 color: rgb(83, 83, 83);
                 line-height: 1.3rem;
             }
-
         }
     }
+
+    // PORTFOLIO
+    .portfolio {
+
+        @media (max-width: $mobile) {
+            padding-right: 2%;
+            
+        }
+        
+        width: 100%;
+        background-color: $light_gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-bottom: 200px;
+        padding-top: 200px;
+        position: relative;
+
+        .portfolio-header {
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 5rem;
+            left: 27rem;
+
+            h2 {
+                color: $blue;
+                font-weight: 700;
+                font-size: 1.25rem;
+                margin-bottom: 15px;
+            }
+    
+            span {
+                font-weight: 900;
+                font-size: 1.5rem;
+            }
+        }
+
+        .project-container {
+            display: flex;
+            gap: 1rem;
+            width: 65rem;
+            border-radius: .75rem;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            margin-bottom: 3rem;
+            align-items: center;
+
+            .project-image {
+
+                img {
+                    max-width: 500px;
+                    border-radius: .75rem;
+                    box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+                }
+            }
+
+            .project-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    margin-bottom: 15px;
+                }
+
+                span {
+                    max-width: 75%;
+                    font-weight: 500;
+                    font-size: 1.15rem;
+                    color: $dark_gray;
+                    line-height: 1.25rem;
+                    letter-spacing: .075rem;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .project-stack {
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 25px;
+                
+                ul {
+                    display: flex;
+                    gap: .5rem;
+                    li {
+                        display: flex;
+                        font-weight: 500;
+                        background-color: white;
+                        padding: 1rem;
+                        box-shadow: 0 0 10px rgba(0,0,0,.1);
+                        border-radius: .75rem;
+                    }
+                }
+            }
+
+            .project-links {
+                font-weight: 500;
+                display: flex;
+                gap: 1rem;
+                cursor: pointer;
+
+                a {
+                    padding: .5rem;
+                        border-radius: .25rem;
+                        transition: background-color 0.5s ease-in;
+
+                    &:hover {
+                        color: white;
+                        background-color: $blue;
+                        border-radius: .25rem;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    // CONTACT
+
+    // FOOTER
 }
