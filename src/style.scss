@@ -160,23 +160,6 @@ $mobile: 975px;
                             font-weight: 500;
                             margin-right: 20px;
                         }
-                        
-                        .icon-container {
-                            width: 3.4rem;
-                            height: 3.4rem;
-                            display: flex;
-                            justify-content: center;
-                            background-color: white;
-                            border-radius: 50%;
-                            box-shadow: 0 0 10px rgba(0,0,0,.09);
-                            margin-right: 10px;
-                            position: relative;
-                            
-                            
-                            img {
-                                width: 50%;
-                            }
-                        }
 
                         &:hover {
                             cursor: pointer;
@@ -231,7 +214,7 @@ $mobile: 975px;
             flex-direction: column;
             
             h2 {
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 1.25rem;
                 color: $blue;
                 margin-bottom: 25px;
@@ -291,6 +274,7 @@ $mobile: 975px;
                 font-weight: 700;
                 font-size: 1.25rem;
                 margin-bottom: 15px;
+                font-weight: 900;
             }
     
             span {
@@ -319,7 +303,7 @@ $mobile: 975px;
                 img {
                     max-width: 500px;
                     border-radius: .75rem;
-                    box-shadow: 0 0 10px rgba(0,0,0,.2);
+                    box-shadow: 0 0 15px rgba(0,0,0,.1);
 
                 }
             }
@@ -379,6 +363,7 @@ $mobile: 975px;
                     padding: .5rem;
                         border-radius: .25rem;
                         transition: background-color 0.5s ease-in;
+                        text-decoration: none;
 
                     &:hover {
                         color: white;
@@ -393,6 +378,151 @@ $mobile: 975px;
     }
 
     // CONTACT
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 200px;
 
+        .contact-header-container {
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            width: 65rem;
+            h2 {
+                font-weight: 900;
+                font-size: 1.25rem;
+                color: $blue;
+                margin-bottom: 25px;
+            }
+            
+            span {
+                font-size: 1.35rem;
+                font-weight: 700;
+                margin-bottom: 25px;
+            }
+        }
+
+        .contact-form-container {
+            width: 100%;
+            width: 65rem;
+            display: flex;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 1rem;
+
+                input {
+                    box-shadow: none;
+                    border-radius: .25rem;
+                    padding: 1rem;
+                    font-size: 1rem;
+                    border: none;
+                    box-shadow: 0 0 5px rgba(0,0,0,.15);
+                    outline-color: $blue;
+                }
+
+                input::placeholder {
+                    font-weight: 500;
+                }
+
+                textarea {
+                    box-shadow: 0 0 5px rgba(0,0,0,.15);
+                    border: none;
+                    text-decoration: none;
+                    height: 10rem;                   
+                    padding: 1rem; 
+                    font-family: 'Roboto', sans-serif;
+                    outline-color: $blue;
+                    font-size: 1rem;
+                }
+
+                button {
+                    border: none;
+                    border-radius: .5rem;
+                    box-shadow: 0 0 5px rgba(0,0,0,.15);
+                    font-size: 1rem;
+                    padding: 1rem;
+                    background-color: white;
+                    margin-bottom: 25px;
+                    font-weight: 900;
+                    color: $blue;
+                    cursor: pointer;
+                    transition: background-color 0.5s ease-in, color 0.5s ease-in;
+
+                    &:hover {
+                        background-color: $blue;
+                        color: white;
+                    }
+                }
+            }
+
+            .contact-sep {
+                align-self: center;
+                text-align: center;
+                width: 100%;
+                font-weight: 900;
+                font-size:1.5rem;
+                color: $blue;
+            }
+
+            .contact-info {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+                .icon-container {
+                    box-shadow: 0 0 15px rgba(0,0,0,.3);
+                    
+                    img {
+                        width: 60%;
+                    }
+                }
+
+                .email-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    
+                    h2 {
+                        font-weight: 900;
+                        font-size: 1.5rem;
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-weight: 900;
+                        color: $dark_gray;
+                        font-size: 1.15rem;
+                    }
+                }
+            }
+        }
+    }
     // FOOTER
+    
+    // COMPONENTS
+
+    .icon-container {
+        width: 3.4rem;
+        height: 3.4rem;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        margin-right: 10px;
+        position: relative;
+        
+        
+        img {
+            width: 50%;
+        }
+    }
 }
