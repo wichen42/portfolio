@@ -49,6 +49,20 @@ input{
     border-radius: 0;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
 // Color Presets
 $light_gray: #F9F9F9;
 $dark_gray: rgb(83, 83, 83);
@@ -389,9 +403,9 @@ $mobile: 975px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 200px;
+        margin-top: 12rem;
         width: 100%;
-
+        margin-bottom: 5rem;
 
         .contact-header-container {
             @media (max-width: $mobile) {
@@ -534,12 +548,14 @@ $mobile: 975px;
     // FOOTER
     .footer {
         display: flex;
-        height: 10rem;
+        height: 8rem;
         background-color: $off_black;
         color: white;
         width: 100%;
         align-items: center;
         justify-content: space-around;
+        font-weight: 500;
+        font-size: 1.1rem;
         div {
             display: flex;
             gap: 1rem;
