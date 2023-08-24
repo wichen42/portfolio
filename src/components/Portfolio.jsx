@@ -33,7 +33,7 @@ const Portfolio = () => {
     };
 
     return (
-    <div className="portfolio">
+    <div className="portfolio" id="project-section">
         <div className="portfolio-header">
             <h2>PORTFOLIO</h2>
             <span>My Web Development Journey, one project at a time.</span>

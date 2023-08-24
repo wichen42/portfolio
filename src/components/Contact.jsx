@@ -2,7 +2,7 @@ import mail from "../assets/mail.svg";
 
 const Contact = () => {
   return (
-    <div className='contact-container'>
+    <div className='contact-container' id="contact-section">
         <div className="contact-header-container">
             <h2>CONTACT ME</h2>
             <span>Want to talk about my projects or colloborate on something new?</span>

@@ -15,6 +15,7 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
+    scroll-behavior: smooth;
 }
   
 footer, header, nav, section, main{
@@ -79,17 +80,22 @@ $mobile: 975px;
     justify-content: center;
     width: 100%;
     height: 100%;
+    background-color: white;
 
     // HEADER
     .header {
-
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 100%;
         border-bottom: 1px solid rgba(0,0,0,0.1);
+        background-color: white;
 
         div {
+            width: 100%;
             padding: 35px 45px 35px 45px;
         }
 
@@ -99,6 +105,8 @@ $mobile: 975px;
         }
     
         .header-right {
+            display: flex;
+            justify-content: flex-end;
             font-size: 18px;
             font-weight: 700;
     
@@ -586,4 +594,5 @@ $mobile: 975px;
             width: 50%;
         }
     }
+
 }

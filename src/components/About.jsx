@@ -2,7 +2,7 @@ import laptop from "../assets/temp-laptop.jpg";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about-section">
         <div className="about-image">
             <img src={laptop} alt="about-image" />
         </div>
