@@ -10,7 +10,7 @@ const Portfolio = () => {
         image: cloundtunes_ss,
         github: "https://github.com/wichen42/Cloud-Tunes",
         demo: "https://cloud-tunes.herokuapp.com",
-        text: "CloudTunes is a SoundCloud clone, a music streaming and social media web app where users are able to upload their own audio files with the functionality to like, comment, and follow other users and their music. ",
+        text: "Cloud Tunes is a full stack SoundCloud clone, a music streaming and social media web app where users are able to upload their own audio files with the functionality to like, comment, and follow other users and their music. ",
         techs: ["React", "Ruby on Rails", "AWS S3", "postgreSQL"],
     }
 

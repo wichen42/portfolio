@@ -349,7 +349,6 @@ $mobile: 975px;
                     font-size: 1rem;
                     color: $dark_gray;
                     line-height: 1.25rem;
-                    letter-spacing: .05rem;
                     margin-bottom: 25px;
                 }
             }
@@ -613,7 +612,12 @@ $mobile: 975px;
             align-self: flex-end;
             font-size: 2rem;
             font-weight: 500;
+            margin-top: .25rem;
             cursor: pointer;
+
+            img {
+                width: 1.5rem;
+            }
         }
 
         div {

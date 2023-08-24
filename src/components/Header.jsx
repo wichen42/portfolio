@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import hamburger from "../assets/hamburger.svg";
+import close from "../assets/close-icon.svg";
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -63,7 +64,7 @@ const Header = () => {
         {!showHamburger && <span onClick={() => handleScroll("contact-section")}>Contact</span>}
       </div>
       <div id="mobile-menu" className={`mobile-menu ${mobileMenuOpen ? 'active' : ''}`}>
-        <span id="mobile-close" onClick={toggleMobileMenu}>X</span>
+        <span id="mobile-close" onClick={toggleMobileMenu}><img src={close} alt="close-icon" /></span>
         <div>
           <span onClick={() => handleMobileScroll("home-section")}>Home</span>
           <span onClick={() => handleMobileScroll("about-section")}>About</span>
