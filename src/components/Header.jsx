@@ -3,6 +3,7 @@ import hamburger from "../assets/hamburger.svg";
 
 const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,19 +33,43 @@ const Header = () => {
     }
   };
 
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const handleMobileScroll = (sectionId) => {
+    if (sectionId === "home-section") {
+      window.scrollTo({top: 0, behavior: "smooth"});
+    } else {
+      handleScroll(sectionId);
+    };
+
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   const showHamburger = windowWidth <= 975;
 
   return (
     <header className="header">
+
       <div className="header-left">
         wilsonchen.dev
       </div>
-      <div className="header-right">
-        {showHamburger && <img id='header-menu' src={hamburger} alt="menu"/>}
-        {!showHamburger && <span>Home</span>}
+      <div className={`header-right ${mobileMenuOpen ? 'active' : ''}`}>
+        {showHamburger && <img id='header-menu' src={hamburger} alt="menu" onClick={toggleMobileMenu}/>}
+        {!showHamburger && <span onClick={() => handleHome()}>Home</span>}
         {!showHamburger && <span onClick={() => handleScroll("about-section")}>About</span>}
         {!showHamburger && <span onClick={() => handleScroll("project-section")}>Projects</span>}
         {!showHamburger && <span onClick={() => handleScroll("contact-section")}>Contact</span>}
+      </div>
+      <div id="mobile-menu" className={`mobile-menu ${mobileMenuOpen ? 'active' : ''}`}>
+        <span id="mobile-close" onClick={toggleMobileMenu}>X</span>
+        <div>
+          <span onClick={() => handleMobileScroll("home-section")}>Home</span>
+          <span onClick={() => handleMobileScroll("about-section")}>About</span>
+          <span onClick={() => handleMobileScroll("project-section")}>Projects</span>
+          <span onClick={() => handleMobileScroll("contact-section")}>Contact</span>
+        </div>
       </div>
     </header>
   );

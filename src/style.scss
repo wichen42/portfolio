@@ -595,4 +595,42 @@ $mobile: 975px;
         }
     }
 
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Start off-screen */
+        width: 250px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+
+        #mobile-close {
+            display: flex;
+            align-self: flex-end;
+            font-size: 2rem;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            span {
+                font-size: 2rem;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+      }
+      
+      .mobile-menu.active {
+        left: 0; /* Slide in when active */
+      }
 }
