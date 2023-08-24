@@ -53,6 +53,7 @@ input{
 $light_gray: #F9F9F9;
 $dark_gray: rgb(83, 83, 83);
 $blue: #147EFB;
+$off_black: #2D2E32;
 
 // Screen Sizes
 $mobile: 975px;
@@ -379,18 +380,28 @@ $mobile: 975px;
 
     // CONTACT
     .contact-container {
+        @media (max-width: $mobile) {
+                width: 36rem;
+
+        }
+
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
         margin-top: 200px;
+        width: 100%;
+
 
         .contact-header-container {
+            @media (max-width: $mobile) {
+                width: 37rem;
+            }
             margin-bottom: 50px;
             display: flex;
             flex-direction: column;
             width: 65rem;
+
             h2 {
                 font-weight: 900;
                 font-size: 1.25rem;
@@ -406,16 +417,23 @@ $mobile: 975px;
         }
 
         .contact-form-container {
-            width: 100%;
-            width: 65rem;
+            @media (max-width: $mobile) {
+                flex-direction: column;
+            }
+
             display: flex;
+            align-items: center;
+            justify-content: space-between;
 
             form {
+                @media (max-width: $mobile) {
+                    width: 37rem;
+                }
+
                 display: flex;
                 flex-direction: column;
-                width: 100%;
                 gap: 1rem;
-
+                width: 25rem;
                 input {
                     box-shadow: none;
                     border-radius: .25rem;
@@ -462,16 +480,23 @@ $mobile: 975px;
             }
 
             .contact-sep {
+                @media (max-width: $mobile) {
+                    margin-bottom: 2rem;
+                    margin-top: 2rem;
+                }
                 align-self: center;
                 text-align: center;
-                width: 100%;
+                width: 20rem;
                 font-weight: 900;
                 font-size:1.5rem;
                 color: $blue;
             }
 
             .contact-info {
-                width: 100%;
+                @media (max-width: $mobile) {
+                    margin-bottom: 50px;
+                }
+
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -486,6 +511,7 @@ $mobile: 975px;
                 }
 
                 .email-container {
+
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -506,7 +532,26 @@ $mobile: 975px;
         }
     }
     // FOOTER
-    
+    .footer {
+        display: flex;
+        height: 10rem;
+        background-color: $off_black;
+        color: white;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        div {
+            display: flex;
+            gap: 1rem;
+            a {
+                
+                img {
+                    width: 2rem;
+                }
+            }
+        }
+    }
+
     // COMPONENTS
 
     .icon-container {
