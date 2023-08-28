@@ -1,4 +1,5 @@
 import temp_headshot from "../assets/riley.jpg";
+import headshot from "../assets/headshot_cropped.jpg";
 import linkedin_icon from "../assets/linkedin.png";
 import github_icon from "../assets/github.png";
 import html_icon from "../assets/html5-icon.svg";
@@ -59,7 +60,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-            <img className="headshot" src={temp_headshot} alt="temp" />
+            <img className="headshot" src={headshot} alt="temp" />
         </div>
 
     </div>
