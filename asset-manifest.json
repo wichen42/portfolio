@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.71c5ccdc.css",
-    "main.js": "/static/js/main.642bfaee.js",
+    "main.css": "/static/css/main.8ab46a18.css",
+    "main.js": "/static/js/main.f6675aca.js",
+    "static/media/srm.gif": "/static/media/srm.9e495557d26209ec1969.gif",
     "static/media/temp-laptop.jpg": "/static/media/temp-laptop.c1ebab3dcce4316acf36.jpg",
-    "static/media/cloudtunes.png": "/static/media/cloudtunes.1f676fece8023e20a459.png",
-    "static/media/messenger.png": "/static/media/messenger.85ec788e038d5709525b.png",
+    "static/media/cloudtunes_ss.png": "/static/media/cloudtunes_ss.c2c8c9e69fda98ea5530.png",
+    "static/media/project_movement_studio.png": "/static/media/project_movement_studio.f044803373c929763dde.png",
+    "static/media/aviques_ss.png": "/static/media/aviques_ss.b1fce7e8129d35e1c268.png",
     "static/media/headshot_cropped.jpg": "/static/media/headshot_cropped.96a4acaf2d97a6377a47.jpg",
-    "static/media/aviquest.png": "/static/media/aviquest.0f47e7c5642684fec29c.png",
     "static/media/riley.jpg": "/static/media/riley.a6b6178bf3f4e85aa749.jpg",
     "static/media/github.png": "/static/media/github.31b4f10e5e554228d89a.png",
     "static/media/linkedin.png": "/static/media/linkedin.9df3772694f9ed1c21b5.png",
@@ -21,11 +22,11 @@
     "static/media/html5-icon.svg": "/static/media/html5-icon.ca4c67f4e973ab9319b42f424525e681.svg",
     "index.html": "/index.html",
     "static/media/tailwind-css-icon.svg": "/static/media/tailwind-css-icon.d84a6f369e7170891c4a19587ccf78e1.svg",
-    "main.71c5ccdc.css.map": "/static/css/main.71c5ccdc.css.map",
-    "main.642bfaee.js.map": "/static/js/main.642bfaee.js.map"
+    "main.8ab46a18.css.map": "/static/css/main.8ab46a18.css.map",
+    "main.f6675aca.js.map": "/static/js/main.f6675aca.js.map"
   },
   "entrypoints": [
-    "static/css/main.71c5ccdc.css",
-    "static/js/main.642bfaee.js"
+    "static/css/main.8ab46a18.css",
+    "static/js/main.f6675aca.js"
   ]
 }
