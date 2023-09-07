@@ -5,9 +5,13 @@ const Project = ({title, image, github, demo, text, techs}) => {
         backgroundImage: `url(${image})`
     };
 
+    const handleOpen = () => {
+        window.open(`${demo}`);
+    };
+
     return (
         <div className='project-container'>
-            <div className='project-image' style={projectImage}>
+            <div className='project-image' style={projectImage} onClick={handleOpen}>
                 {/* <img src={image} alt="" /> */}
             </div>
             <div className="project-text">
