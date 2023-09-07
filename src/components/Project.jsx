@@ -21,7 +21,7 @@ const Project = ({title, image, github, demo, text, techs}) => {
                         Github
                     </a>
                     <a href={demo} target="_blank">
-                        Live Demo
+                        Live Site
                     </a>
                 </div>
             </div>

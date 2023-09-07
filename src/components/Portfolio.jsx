@@ -10,7 +10,7 @@ const Portfolio = () => {
         title: "Project Movement Studio",
         image: project_mvmt_ss,
         github: "https://github.com/wichen42/Project-Movement-Studio",
-        demo: "https://project-movement-studio.onrender.com/",
+        demo: "https://projectmovement.studio/",
         text: "Project Movement Studio is a buisness website for a fitness boutique based in New York City.",
         techs: ["React", "SaSS", "Render"],
     };
