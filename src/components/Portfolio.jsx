@@ -1,6 +1,7 @@
 import aviquest_ss from "../assets/aviques_ss.png";
 import cloundtunes_ss from "../assets/cloudtunes_ss.png";
-import messenger_ss from "../assets/srm.gif";
+import messenger_gif from "../assets/srm.gif";
+import messenger_img from "../assets/srm_ss.png";
 import project_mvmt_ss from "../assets/project_movement_studio.png";
 import Project from "./Project";
 
@@ -35,7 +36,8 @@ const Portfolio = () => {
 
     const messenger = {
         title: "Star Rail Messenger",
-        image: messenger_ss,
+        gif: messenger_gif,
+        image: messenger_img,
         github: "https://github.com/wichen42/star_rail_messenger",
         demo: "https://star-rail-messenger.onrender.com/splash",
         text: "Star Rail Messenger is a dynamic and immersive web application inspired by Honkai Star Rail's in-game messenger, offering real-time messaging, a game-themed design, and integrated chatbot functionality for an engaging communication experience.",
@@ -51,7 +53,7 @@ const Portfolio = () => {
         <Project title={prjct_mvmt.title} image={prjct_mvmt.image} github={prjct_mvmt.github} demo={prjct_mvmt.demo} text={prjct_mvmt.text} techs={prjct_mvmt.techs}/>
         <Project title={cloudtunes.title} image={cloudtunes.image} github={cloudtunes.github} demo={cloudtunes.demo} text={cloudtunes.text} techs={cloudtunes.techs}/>
         <Project title={aviquest.title} image={aviquest.image} github={aviquest.github} demo={aviquest.demo} text={aviquest.text} techs={aviquest.techs}/>
-        <Project title={messenger.title} image={messenger.image} github={messenger.github} demo={messenger.demo} text={messenger.text} techs={messenger.techs}/>
+        <Project title={messenger.title} gif={messenger.gif} image={messenger.image} github={messenger.github} demo={messenger.demo} text={messenger.text} techs={messenger.techs}/>
     </div>
     );
 };
