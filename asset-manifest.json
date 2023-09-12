@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ab46a18.css",
-    "main.js": "/static/js/main.2c4849b5.js",
+    "main.css": "/static/css/main.909d2255.css",
+    "main.js": "/static/js/main.18cb9f5c.js",
     "static/media/srm.gif": "/static/media/srm.9e495557d26209ec1969.gif",
     "static/media/temp-laptop.jpg": "/static/media/temp-laptop.c1ebab3dcce4316acf36.jpg",
     "static/media/cloudtunes_ss.png": "/static/media/cloudtunes_ss.c2c8c9e69fda98ea5530.png",
     "static/media/project_movement_studio.png": "/static/media/project_movement_studio.f044803373c929763dde.png",
+    "static/media/srm_ss.png": "/static/media/srm_ss.4b7d2539e51e9260b08c.png",
     "static/media/aviques_ss.png": "/static/media/aviques_ss.b1fce7e8129d35e1c268.png",
     "static/media/headshot_cropped.jpg": "/static/media/headshot_cropped.96a4acaf2d97a6377a47.jpg",
     "static/media/riley.jpg": "/static/media/riley.a6b6178bf3f4e85aa749.jpg",
@@ -22,11 +23,11 @@
     "static/media/html5-icon.svg": "/static/media/html5-icon.ca4c67f4e973ab9319b42f424525e681.svg",
     "index.html": "/index.html",
     "static/media/tailwind-css-icon.svg": "/static/media/tailwind-css-icon.d84a6f369e7170891c4a19587ccf78e1.svg",
-    "main.8ab46a18.css.map": "/static/css/main.8ab46a18.css.map",
-    "main.2c4849b5.js.map": "/static/js/main.2c4849b5.js.map"
+    "main.909d2255.css.map": "/static/css/main.909d2255.css.map",
+    "main.18cb9f5c.js.map": "/static/js/main.18cb9f5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ab46a18.css",
-    "static/js/main.2c4849b5.js"
+    "static/css/main.909d2255.css",
+    "static/js/main.18cb9f5c.js"
   ]
 }
