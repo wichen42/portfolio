@@ -9,6 +9,7 @@ import Project from "./Project";
 const Portfolio = () => {
     const prjct_mvmt = {
         title: "Project Movement Studio",
+        tag: "Custom Website",
         image: project_mvmt_ss,
         github: "https://github.com/wichen42/Project-Movement-Studio",
         demo: "https://projectmovement.studio/",
@@ -18,6 +19,7 @@ const Portfolio = () => {
 
     const cloudtunes= {
         title: "Cloud Tunes",
+        tag: "Full Stack Sound Cloud Clone",
         image: cloundtunes_ss,
         github: "https://github.com/wichen42/Cloud-Tunes",
         demo: "https://cloud-tunes.herokuapp.com",
@@ -26,7 +28,8 @@ const Portfolio = () => {
     }
 
     const aviquest = {
-        title: "Aviquest", 
+        title: "Aviquest",
+        tag: "MERN Gamified Taskmanager",
         image: aviquest_ss, 
         github: "https://github.com/wichen42/aviquest",
         demo: "https://aviquest.herokuapp.com/",
@@ -36,6 +39,7 @@ const Portfolio = () => {
 
     const messenger = {
         title: "Star Rail Messenger",
+        tag: "Open AI Chatbot Messenger",
         gif: messenger_gif,
         image: messenger_img,
         github: "https://github.com/wichen42/star_rail_messenger",
@@ -50,10 +54,10 @@ const Portfolio = () => {
             <h2>PORTFOLIO</h2>
             <span>My Web Development Journey, one project at a time.</span>
         </div>
-        <Project title={prjct_mvmt.title} image={prjct_mvmt.image} github={prjct_mvmt.github} demo={prjct_mvmt.demo} text={prjct_mvmt.text} techs={prjct_mvmt.techs}/>
-        <Project title={cloudtunes.title} image={cloudtunes.image} github={cloudtunes.github} demo={cloudtunes.demo} text={cloudtunes.text} techs={cloudtunes.techs}/>
-        <Project title={aviquest.title} image={aviquest.image} github={aviquest.github} demo={aviquest.demo} text={aviquest.text} techs={aviquest.techs}/>
-        <Project title={messenger.title} gif={messenger.gif} image={messenger.image} github={messenger.github} demo={messenger.demo} text={messenger.text} techs={messenger.techs}/>
+        <Project title={prjct_mvmt.title} tag={prjct_mvmt.tag} image={prjct_mvmt.image} github={prjct_mvmt.github} demo={prjct_mvmt.demo} text={prjct_mvmt.text} techs={prjct_mvmt.techs}/>
+        <Project title={cloudtunes.title} tag={cloudtunes.tag} image={cloudtunes.image} github={cloudtunes.github} demo={cloudtunes.demo} text={cloudtunes.text} techs={cloudtunes.techs}/>
+        <Project title={aviquest.title} tag={aviquest.tag} image={aviquest.image} github={aviquest.github} demo={aviquest.demo} text={aviquest.text} techs={aviquest.techs}/>
+        <Project title={messenger.title} gif={messenger.gif} tag={messenger.tag} image={messenger.image} github={messenger.github} demo={messenger.demo} text={messenger.text} techs={messenger.techs}/>
     </div>
     );
 };

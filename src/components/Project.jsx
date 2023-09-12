@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Stack from "./Stack";
 
-const Project = ({title, image, gif, github, demo, text, techs}) => {
+const Project = ({title, tag, image, gif, github, demo, text, techs}) => {
     const [isHovered, setIsHovered] = useState(false);
 
     const projectImage = {
@@ -24,6 +24,7 @@ const Project = ({title, image, gif, github, demo, text, techs}) => {
             </div>
             <div className="project-text">
                 <h2>{title}</h2>
+                <span className="progject-tag">{tag}</span>
                 <span>{text}</span>
                 <div className='project-stack'>
                     <Stack techs={techs}/>
