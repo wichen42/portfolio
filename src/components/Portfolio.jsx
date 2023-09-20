@@ -2,7 +2,7 @@ import aviquest_ss from "../assets/aviques_ss.png";
 import cloundtunes_ss from "../assets/cloudtunes_ss.png";
 import messenger_gif from "../assets/srm.gif";
 import messenger_img from "../assets/srm_ss.png";
-import project_mvmt_ss from "../assets/project_movement_studio.png";
+import project_mvmt_ss from "../assets/prjct_mvmt.png";
 import Project from "./Project";
 
 
